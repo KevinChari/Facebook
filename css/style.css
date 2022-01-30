@@ -1,9 +1,14 @@
 :root {
     --prymary-color:#1b74e4;
+    --design-botton:#007ef7;
     --secondary-color:#050505;
-    --three-color:#050505;
+    --three-color:#333333;
     --input-color:#f0f2f5;
     --contrast-color:#65676b;
+    --circle-div:#e4e6eb;
+    --circle-div-2:#d9dbdf;
+    --hover-nav:#f2f2f2;
+    --notify-color:#e41e3f;
 }
 
 
@@ -11,6 +16,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Segoe UI Historic, Segoe UI, Helvetica, Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
 }
 
 html {
@@ -22,6 +32,7 @@ header {
     width: 100%;
     height: auto;
     border-bottom: 1px solid #dddfe2;
+    box-shadow: 0 8px 6px -7px #dddfe2;
 }
  
 header nav {
@@ -68,4 +79,132 @@ header nav {
     border: none;
     background-color: transparent;
     outline: none;
+}
+
+.icons__midle__nav__container {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.icons__midle__nav__container .icons__midle {
+    width: 111.5px;
+    height: 56px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons__midle__nav__container .icons__midle:hover {
+    height: 49px;
+    cursor: pointer;
+    background-color: var(--hover-nav);
+    border-radius: 10px;
+    border: none;
+}
+
+.icons__midle__nav__container .icons__midle span {
+    position: absolute;
+    width: 26.50px;
+    height: 19px;
+    top: 5px;
+    left: calc(75% - 22px);
+    border-radius: 50px;
+    background-color: var(--notify-color);
+    color: #ffffff;
+    text-align: center;
+    font-size: 1.3rem;
+    line-height: 1.5;
+    font-weight: 500;
+    font-family: Segoe UI Historic, Segoe UI, Helvetica, Arial, sans-serif;
+}
+
+
+.icons__midle__nav__container i {
+    font-size: 2.2rem;
+    color: var(--contrast-color);
+}
+
+
+.icons__midle__nav__container i:active {
+    color: var(--design-botton);
+
+}
+
+.icons__midle__nav__container i:visited {
+    color: var(--design-botton);
+}
+
+.icons__end__nav__container {
+    display: flex;
+    padding: 0px 16px 0px 4px;
+}
+
+.icons__end__nav__container  .img__end__nav {
+    width: 78px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    margin-right: 8px;
+}
+
+.img__end__nav a {
+    display: flex;
+    align-items: center;
+    padding: 0 12px 0 12px;
+}
+
+.img__end__nav a:hover {
+    height: 36px;
+    border-radius: 60px;
+    background-color: var(--hover-nav);
+}
+
+.img__end__nav img {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    margin-right: 6px;
+}
+
+.img__end__nav p {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.9rem;
+    color: var(--secondary-color);
+}
+
+
+.icons__end__nav__container .icons__end {
+    display: flex;
+    align-items: center;
+    margin-left: 8px;
+}
+
+.icons__end div {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+    border-radius: 50%;
+    background-color: var(--circle-div);
+}
+
+.icons__end div:hover {
+    background-color: var(--circle-div-2);
+}
+
+.icons__end a {
+   width: auto;
+   height: auto;
+}
+.icons__end i {
+    width: 20px;
+    height: 20px;
+    font-size: 1.8rem;
+    color: var(--three-color);
+    text-align: center;
 }
